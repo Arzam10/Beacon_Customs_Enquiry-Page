@@ -2,7 +2,7 @@ require("dotenv").config();
 const express=require ("express")
 const router=require("./routes/route")
 const cors = require("cors");
-app.use(cors()); 
+
 
 const path = require("path");
 const mailrouter=require("./routes/mail")
@@ -16,6 +16,7 @@ const port=process.env.PORT || 9000
 mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log("MongoDB connected")
 }).catch((err)=>console.error(err))
+app.use(cors()); 
 app.use(express.static('node_modules'));
 app.use(express.static('public'));
 
