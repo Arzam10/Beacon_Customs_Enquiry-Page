@@ -29,7 +29,8 @@ router.post("/", async (req, res) => {
       console.log("Saved Enquiry:", newEnquiry); // Log the saved object
       const {name,email,Services}=newEnquiry
       
-    res.redirect("http://localhost:9000/mail/send-email")
+      res.redirect("https://beacon-customs.onrender.com/mail/send-email");
+
       console.log("sent")
 
     } catch (err) {

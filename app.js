@@ -31,8 +31,9 @@ app.set("views", path.join(__dirname, "views", "pages"));
 
 app.use(express.urlencoded({extended:false}))
 
+console.log("✅ Loading /send route...");
+app.use("/send", router);
 
-app.use("/send",router)
 app.use("/mail", mailrouter);
 
 
