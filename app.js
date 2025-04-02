@@ -1,6 +1,9 @@
 require("dotenv").config();
 const express=require ("express")
 const router=require("./routes/route")
+const cors = require("cors");
+app.use(cors()); 
+
 const path = require("path");
 const mailrouter=require("./routes/mail")
 
