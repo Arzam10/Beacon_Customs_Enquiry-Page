@@ -134,7 +134,7 @@ const enqSchema = mongoose.Schema({
         enum: ["Colour change",
             "Wrapping",
             "Modification",
-            "Headlight  / Taillight Customization",
+            "Headlight / Taillight Customization",
             "Restoration",
             "Mechanical / Engine Work",
             "Detailing / High Gloss Treatment ",
