@@ -33,7 +33,7 @@ mailrouter.get("/send-email", async (req, res) => {
     // Email options
     const mailOptions = {
       from: process.env.EMAIL_USER, // ✅ Replace with your Gmail
-      to: "beaconcustomsindia@gmail.com@gmail.com", // ✅ Replace with recipient email
+      to: "beaconcustomsindia@gmail.com", // ✅ Replace with recipient email
       subject: "New Enquiry for Beacon Customs",
       text: `Here are the latest form submissions:\n\n${emailContent}`,
     };
